@@ -41,7 +41,7 @@ model.save('cifar10_model.h5')
 model = load_model('cifar10_model.h5')
 
 # 分類する入力画像の読み込み
-img_path = '鹿.jpeg'  # 入力画像のパスを指定してください
+img_path = 'test/鹿.jpeg' 
 img = image.load_img(img_path, target_size=(32, 32))
 img = image.img_to_array(img)
 img = np.expand_dims(img, axis=0)
